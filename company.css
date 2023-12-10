@@ -49,7 +49,7 @@ a{
 .menu li a:hover{
     color: #FFA200;
 }
-@media (max-width:393px) {
+@media (max-width:412px) {
     *{
         font-size: 8px;
         margin: 0;
