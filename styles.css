@@ -342,6 +342,9 @@ img{
 .noti .nt:nth-child(5){
     margin-bottom: 20px;
 }
+iframe{
+    width: 560px;
+    height: 315px;
 footer{
     background-color: #515151;
     width: 100%;
