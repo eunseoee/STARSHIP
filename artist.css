@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "inter",sans-serif;
+    color: #151515;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* align-items: center; */
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    height: 120px;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.logo{
+    margin-left: 80px;
+}
+.logo img{
+    width: 150px;
+}
+.menu{
+    margin-right: 60px;
+}
+ul{
+    display: flex;
+    justify-content: flex-end;
+}
+li{
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    color: #6B6B6B;
+}
+.menu li a:hover{
+    color: #FFA200;
+}
+@media (max-width:393px) {
+    *{
+        font-size: 8px;
+        margin: 0;
+        padding: 0;
+    }
+    .nav{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .logo{
+        order: 0;
+        margin-left: 20px;
+        margin-top: 12px;
+    }
+    .logo img{
+        width: 58px;
+    }
+    .menu{
+        order: 1;
+        width: 100%;
+        flex: 0 5 auto;
+        margin-left: 10px;
+        margin-right: 0;
+    }
+    ul{
+        justify-content: flex-start;
+    }
+    li{
+        margin-left: 10px;
+        margin-right: 10px;
+        box-sizing: border-box;
+    }
+}
+.hero{
+    height: calc(100vh - 120px);
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("kwangsulee.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+    margin-left: 108px;
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+p{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 108px;
+}
+.arti{
+    display: block;
+    margin-bottom: 64px;
+    margin-top: 64px;
+}
+.artichart{
+    width: 1320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+.artcard{
+    width: 290px;
+    height: 290px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 24px;
+}
+.artcard:hover{
+    transform: translateY(-2%);
+    transition: all 0.3s ease-in;
+}
+.artcard .artist{
+    width: 100%;
+    position: absolute;
+}
+.artcard .artist1{
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+}
+.artcard:hover .artist1{
+    transition: all 0.2s ease-in;
+    transform: scale(110%);
+    opacity: 1;
+}
+.artcard:hover .artist{
+    opacity: 0;
+}
+.cardst{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.cardst p{
+    margin-left: 0px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 25px;
+    color: #ffffff;
+    background-color: rgba(255, 184, 0, 0.5);
+    opacity: 0;
+}
+.artcard:hover .cardst p{
+    transition: all 0.2s ease-in;
+    opacity: 1;
+}
+h2{
+    margin-top: 64px;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 48px;
+}
+footer{
+    background-color: #515151;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+footer p{
+    margin-left: 0;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+.sns{
+    margin-top: 12px;
+}
+.sns img{
+    width: 20px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+@media (max-width:393px) {
+    header{
+        height: 455px;
+    }
+    .hero{
+        height: 382px;
+        width: 100%;
+        margin-top: 73px;
+        margin-bottom: 0;
+    }
+    h1{
+        margin-left: 31px;
+        font-size: 16px;
+        font-weight: 900;
+        margin-bottom: 8px;
+    }
+    p{
+        font-size: 10px;
+        margin-left: 31px;
+    }
+    h2{
+        font-size: 12px;
+    }
+    .arti{
+        display: block;
+        margin-bottom: 24px;
+        margin-top: 14px;
+    }
+    .artichart{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 14px;
+    }
+    .artcard{
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        position: relative;
+        margin-top: 10px;
+        margin-left: 14px;
+        margin-right: 14px;
+        margin-bottom: 10px;
+    }
+    .cardst p{
+        margin-left: 0px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 900;
+        color: #151515;
+        background-color: rgba(255, 184, 0, 0.5);
+        opacity: 0;
+    }
+    footer{
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
+    footer p{
+        font-size: 6px;
+    }
+    .sns{
+        margin-top: 6px;
+    }
+    .sns img{
+        width: 10px;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+}
